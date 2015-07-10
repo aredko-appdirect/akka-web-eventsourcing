@@ -36,7 +36,7 @@
 				    		<div id="content">
 	    					</div>
 				    	</div>
-		    		</div>
+		    			</div>
 	    		</div>
 	    		
 	    		
@@ -54,8 +54,7 @@
 				  $("#content").html("" +
 			    	  "<div class=\"alert alert-success\" role=\"alert\">" +
 			    	  "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>" +
-			    	  "<span class=\"sr-only\">Success:</span>" +
-			    	  data +
+			    	  "<span class=\"sr-only\">Success:</span>&nbsp;" + data +
 			    	  "</div>"
 				 );
 		      },
@@ -63,7 +62,7 @@
 			      $("#content").html("" +
 			    	  "<div class=\"alert alert-danger\" role=\"alert\">" +
 			    	  "<span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"></span>" +
-			    	  "<span class=\"sr-only\">Error:</span>" + errorThrown +
+			    	  "<span class=\"sr-only\">Error:</span>&nbsp;" + qXHR.responseText +
 			    	  "</div>"
 				 );
 		      }
